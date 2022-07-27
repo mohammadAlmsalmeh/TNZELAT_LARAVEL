@@ -20,7 +20,7 @@ class adminAuth
             return $next($request);
         }
         else{
-            return redirect("/")->with("message","you are not admin");
+            return redirect("/login")->with("message","you are not admin");
         }
     }
 }
